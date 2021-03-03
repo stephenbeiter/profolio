@@ -10,8 +10,8 @@
 }
 
 body {
-  background-color: #222831;
-  font-family: 'Montserrat', sans-serif;
+  background-color: #202124;
+  font-family: 'Raleway', sans-serif;
   color: #ececec;
 }
 
@@ -20,19 +20,17 @@ header {
   position: fixed;
   width: 100%;
   background-color: #ececec;
+  color: #202124;
   display:flex;
   justify-content: space-between; /* Puts maximum space between the items */
   flex-wrap: wrap;
   align-items: center;
-  z-index: 50;
 }
 
 header h1 {
-  font-weight: bold;
-  font-size: 40px;
   text-align: center;
-  background-color: #222831;
-  padding: 5px;
+  font-weight: bold;
+  margin: 10px 20px;
 }
 
 header nav {
@@ -46,7 +44,7 @@ header nav ul li {
 
 header nav ul li a {
   text-decoration: none;
-  color: #222831;
+  color: #202124;
   font-size: 18px;
   padding: 5px 5px;
   font-weight: bold;
@@ -206,7 +204,6 @@ header nav ul li a:hover {
 
 .section-header {
   font-size: 35px;
-  font-family: 'Raleway', sans-serif;
   color: #ececec;
   flex: 1;
   padding: 0px 20px 0px 20px;
@@ -234,6 +231,10 @@ header nav ul li a:hover {
     margin: 10px;
   }
 
+  header nav {
+    margin: 0;
+  }
+
   .section-container {
     flex-direction: column;
   }
@@ -253,6 +254,10 @@ header nav ul li a:hover {
   .contact-me-info ul li {
     display: block;
     text-align: center;
+  }
+
+  header nav {
+    margin: 0;
   }
 
   header nav ul li {
