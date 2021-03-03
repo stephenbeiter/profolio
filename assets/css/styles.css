@@ -10,27 +10,28 @@
 }
 
 body {
-  background-color: #30475e;
+  background-color: #222831;
   font-family: 'Montserrat', sans-serif;
-  color: #f2a365;
+  color: #ececec;
 }
 
 /* Header and Nav Styling*/
 header {
   position: fixed;
   width: 100%;
-  background-color: #f2a365;
+  background-color: #ececec;
   display:flex;
   justify-content: space-between; /* Puts maximum space between the items */
   flex-wrap: wrap;
   align-items: center;
+  z-index: 50;
 }
 
 header h1 {
   font-weight: bold;
   font-size: 40px;
   text-align: center;
-  background-color: #30475e;
+  background-color: #222831;
   padding: 5px;
 }
 
@@ -45,17 +46,19 @@ header nav ul li {
 
 header nav ul li a {
   text-decoration: none;
-  color: #30475e;
-  font-size: 15px;
+  color: #222831;
+  font-size: 18px;
   padding: 5px 5px;
+  font-weight: bold;
 }
 
 header nav ul li a:hover {
   text-decoration: none;
-  color: #30475e;
-  font-size: 15px;
+  color: #222831;
+  font-size: 18px;
   padding: 5px 5px;
-  border-bottom: 2px solid #30475e;
+  border-bottom: 2px solid #222831;
+  font-weight: bold;
 }
 
 .hero-container {
@@ -73,6 +76,10 @@ header nav ul li a:hover {
   justify-content: flex-start;
 }
 
+.section-container p {
+  margin-top: 20px;
+}
+
 /* Projects Grid */
 .projects-container {
   display: flex;
@@ -82,7 +89,7 @@ header nav ul li a:hover {
 }
 
 .projects-grid-wrapper {
-  border-left: 3px solid #f2a365;
+  border-left: 3px solid #ececec;
   display: inline-block;
 }
 
@@ -96,50 +103,22 @@ header nav ul li a:hover {
 
 .projects-grid-item {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 5px #e1d89f;
-  color: white;
-  background-color: #efc88b;
   position: relative;
-  opacity: 0.5;
   transition: 0.5s;
-}
-
-.projects-grid-item-wrapper {
-  opacity: 0;
-  transition: 0.5s;
-}
-
-.projects-grid-item:hover .projects-grid-item-wrapper {
-  opacity: 100%;
+  opacity: 50%;
 }
 
 .projects-grid-item:hover {
   opacity: 100%;
 }
-.projects-grid-text {
-  padding: 15px 30px;
-  background-color: none;
-}
 
 .projects-link {
-  text-decoration: none;
-  color: white;
   width: 100%;
   height: 100%;
 }
 
-.main-projects-header {
-  font-size: x-large;
-}
-
 .secondary-projects-header {
   font-size: medium;
-}
-
-.projects-grid-text-small {
-  padding: 5px 10px;
 }
 
 .grid-image-size {
@@ -155,26 +134,20 @@ header nav ul li a:hover {
 }
 
 .item-2 {
-  background: url("../images/missile-flight.png");
+  background: url("../img/passgen.PNG");
   grid-area: 3/1 / span 2 / span 1;
   background-size: cover;
 }
 
 .item-3 {
-  background: url("../images/fly-high.jpg");
+  background: url("../img/codequiz.PNG");
   grid-area: 3/2 / span 2 / span 1;
   background-size: cover;
 }
 
 .item-4 {
-  background: url("../images/placeholder-image.png");
+  background: url("../img/workday.png");
   grid-area: 5/1 / span 2 / span 1;
-  background-size: cover;
-}
-
-.item-5 {
-  background: url("../images/placeholder-image.png");
-  grid-area: 5/2 / span 2 / span 1;
   background-size: cover;
 }
 
@@ -189,7 +162,7 @@ header nav ul li a:hover {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  border-left: 3px solid #f2a365;
+  border-left: 3px solid #ececec;
 }
 
 .contact-me-info ul {
@@ -204,17 +177,17 @@ header nav ul li a:hover {
 
 .contact-me-info ul li a {
   text-decoration: none;
-  color: #f2a365;
+  color: #ececec;
   font-size: 15px;
   padding: 5px 5px;
 }
 
 .contact-me-info ul li a:hover {
   text-decoration: none;
-  color: #f2a365;
+  color: #ececec;
   font-size: 15px;
   padding: 5px 5px;
-  border-bottom: 2px solid #f2a365;
+  border-bottom: 2px solid #ececec;
 }
 
 .section-content {
@@ -234,7 +207,7 @@ header nav ul li a:hover {
 .section-header {
   font-size: 35px;
   font-family: 'Raleway', sans-serif;
-  color: #f2a365;
+  color: #ececec;
   flex: 1;
   padding: 0px 20px 0px 20px;
   margin-top: 5%;
@@ -244,7 +217,7 @@ header nav ul li a:hover {
 }
 
 .section-text {
-  border-left: 3px solid #f2a365;
+  border-left: 3px solid #ececec;
 }
 
 @media screen and (max-width: 865px) {
@@ -305,10 +278,6 @@ header nav ul li a:hover {
     text-align: center;
   }
 
-  .projects-grid-text {
-    background: none;
-  }
-
   .section-content img {
     max-height: 200px;
     text-align: center;
@@ -340,10 +309,6 @@ header nav ul li a:hover {
 
   .secondary-projects-header {
     text-align: center;
-  }
-
-  .projects-grid-text {
-    background: none;
   }
 
   .section-content img {
