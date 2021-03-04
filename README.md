@@ -2,7 +2,7 @@
 ![License Badge](https://img.shields.io/badge/license-GNU%20GPLv3-green)
 ![profolio](./assets/img/profolio.PNG)
 ## Description
-A personal portfolio page to showcase my web development projects. Also, my contact info.
+A personal portfolio page to showcase my web development projects. Also, my contact info. To view the live site, click [here](https://stephenbeiter.github.io/profolio/)
 ## Table of Contents
 * [Installation](#Installation)
 * [Usage](#Usage)
