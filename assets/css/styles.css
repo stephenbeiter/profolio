@@ -153,6 +153,12 @@ header nav ul li a:hover {
   background-size: cover;
 }
 
+.item-5 {
+  background: url("../img/the-private-network.PNG");
+  grid-area: 5/2 / span 2 / span 1;
+  background-size: cover;
+}
+
 .contact-me-container {
   display: flex;
   flex-wrap: wrap;
