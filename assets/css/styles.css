@@ -15,6 +15,18 @@ body {
   color: #ececec;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+  opacity: 50%;
+  transition: 0.5s;
+}
+
+a:hover {
+  text-decoration: none;
+  opacity: 100%;
+}
+
 /* Header and Nav Styling*/
 header {
   position: fixed;
@@ -114,9 +126,16 @@ header nav ul li a:hover {
   opacity: 100%;
 }
 
-.projects-link {
-  width: 100%;
+.project-link-container {
+  width: 50%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-icon {
+  font-size: 5rem;
 }
 
 .secondary-projects-header {
